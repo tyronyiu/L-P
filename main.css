@@ -1,0 +1,164 @@
+body{
+font-family: helvetica neue;
+margin:0px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+margin-left: 2em;
+}
+
+.subpages{
+    margin-right: 4em;
+    display: flex;
+    justify-content: space-between;
+    width: 10em;
+}
+
+.subpages > * {
+font-weight: 500;
+}
+
+.banner{
+}
+
+.banner_left{
+}
+
+.banner_left > h1{
+font-weight:500;
+font-family: Avenir Next;
+padding: 1em;
+}
+
+.banner_left > p{
+    color: grey;
+    font-family: Avenir Next;
+    text-align: center;
+}
+
+.banner_right{
+height: 75vh;
+background-image: url(/assets/top_image_right.png);
+background-size: cover;
+}
+
+.top_image_right{
+    max-width: 40%;
+    float: right;
+}
+
+.top_image_left{
+    max-width: 100%;
+    margin-top:10em;
+}
+
+.social_buttons_top{
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button_instagram{
+    box-shadow: 2px 8px 12px rgba(0,0,0,0.12);
+    border: solid 2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #FF6A95, #BA91FF);
+    padding: 1.25em;
+    width: fit-content;
+}
+
+.button_facebook{
+    box-shadow: 2px 8px 12px rgba(0,0,0,0.12);
+    border: solid 2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#1FA2FF, #12D7FA);
+    border-radius: 6px;
+    padding: 1.25em;
+    width: fit-content;
+}
+
+.main_description_container{
+    width: 17em;
+    margin: auto;
+    background: rgba(255,255,255,0.75);
+    border-radius: 6px;
+    z-index: 2;
+    position: absolute;
+    right: 12em;
+    bottom: 9em;
+    padding: 1em;
+}
+
+.main_description_text{
+
+}
+
+.top_statement{
+    margin-top: 10em;
+    /*margin-bottom: 10em;*/
+}
+
+
+.site-description{
+    max-width: 75%;
+    margin: 2em auto 2em auto;
+}
+
+.main{
+    margin-top: 5em;
+}
+
+.section-p{
+    max-width: 75%;
+    margin: 4em auto 4em auto;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+.banner{
+    height: 80vh;
+    display: flex;
+}
+
+.banner_left{
+    width: 60%;
+}
+
+.top_image_left{
+    max-width: 50%;
+    margin-left: 2em;
+
+}
+
+.banner_right{
+    width: 40%;
+    
+}
+
+.site-description{
+    right: 0;
+    margin-right: 5%;
+    max-width: 50%;
+    position: absolute;
+    top: 90vh;
+}
+
+.main{
+margin-top: 15em;
+}
+
+}
