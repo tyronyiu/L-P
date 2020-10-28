@@ -127,6 +127,26 @@ background-size: cover;
 
 
 
+.instafeed{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+align-items: center;
+padding-left: 1em;
+padding-right: 1em;
+}
+
+.insta-image-container{
+margin: 2em auto 2em auto;
+}
+
+.insta-image-container > p {
+text-align: center;
+}
+
+.insta-image{
+width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
 .banner{
@@ -160,5 +180,29 @@ background-size: cover;
 .main{
 margin-top: 35%;
 }
+
+.instafeed{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+
+.insta-image-container > p {
+    text-align:left;
+}
+
+.insta-image-container{
+    margin: 2em 1em 2em 1em;
+width: 25%;
+}
+
+
+.insta-image-link{
+
+}
+
 
 }

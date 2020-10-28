@@ -79,7 +79,7 @@ von neuen Outfits sowie besondere Kombinationen, von klassisch bis hipp!
 
 
 
-<div id="instafeed"></div>
+<div id="instafeed" class="instafeed"></div>
 
             </div>
 
@@ -89,7 +89,8 @@ von neuen Outfits sowie besondere Kombinationen, von klassisch bis hipp!
 
 <script type="text/javascript">
     var feed = new Instafeed({
-template: '<a href="{{link}}"><img class="insta-image" src="{{image}}" /></a>',
+        limit: 5,
+        template: '<div class="insta-image-container"><a href="{{link}}" class="insta-image-link"><img class="insta-image" src="{{image}}" title="{{caption}}" /></a><p>{{caption}}</p></div>',
       accessToken: 'IGQVJVVTVqMS12OV9UdU1Ib18zdnd1ME1ENlB5bFp4RkJTLW9MNE4xSmk2ZAU40cnFickp1WWxjVjRXUy0zMTk1M0dwd21LMXhYTG1ISFhjYjlqMkVDaFpUblVMd1BTajZALSGNTNThiRzIzc2Q2YjJteGFuLWdxOUhZAY1A4'
     });
     feed.run();
