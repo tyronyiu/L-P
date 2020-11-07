@@ -36,10 +36,11 @@ font-weight: 500;
 .banner_left{
 }
 
-.banner_left > h1{
+.banner_left > h2{
 font-weight:500;
 font-family: Avenir Next;
 padding: 1em;
+font-size: 2em;
 }
 
 .banner_left > p{
@@ -265,7 +266,7 @@ margin: auto 2em auto 2em;
     width: 60%;
 }
 
-.banner_left > h1{
+.banner_left > h2{
 margin: auto 2em auto 2em;
 }
 
