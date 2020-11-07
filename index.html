@@ -179,6 +179,18 @@ Kontakt zu uns auf. Wir beraten Euch online so - als seid Ihr bei uns im Laden.
 </script>
 
 
-
+<script>
+ // ServiceWorker is a progressive technology. Ignore unsupported browsers
+  if ('serviceWorker' in navigator) {
+    console.log('CLIENT: service worker registration in progress.');
+    navigator.serviceWorker.register('service-worker.js').then(function() {
+      console.log('CLIENT: service worker registration complete.');
+    }, function() {
+      console.log('CLIENT: service worker registration failure.');
+    });
+  } else {
+    console.log('CLIENT: service worker is not supported.');
+  }
+</script>
 
 </html>
