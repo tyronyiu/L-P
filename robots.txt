@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://boring-wescoff-3bf8a5.netlify.app/sitemap.xml
