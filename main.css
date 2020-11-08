@@ -254,7 +254,16 @@ color: rgba(0,0,0,0.5);
 margin: auto 2em auto 2em;
 }
 
+.image_gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 
+.gallery_image{
+margin: 1em;
+width: 80%;
+}
 
 @media only screen and (min-width: 768px) {
 .banner{
@@ -367,6 +376,19 @@ width: 25%;
 .agb{
     width: 50%;
     margin: auto;
+}
+
+.gallery_image{
+margin: 1em;
+width: 25%;
+}
+
+.gallery_image_half{
+    width: 50%;
+}
+
+.gallery_image_thirtyfive{
+    width: 35%;
 }
 
 }
